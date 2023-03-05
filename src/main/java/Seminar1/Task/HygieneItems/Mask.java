@@ -17,6 +17,6 @@ public class Mask extends HygieneItems{
 
     @Override
     public String toString() {
-        return super.toString()+" ??? ";
+        return super.toString()+" улучшенная";
     }
 }

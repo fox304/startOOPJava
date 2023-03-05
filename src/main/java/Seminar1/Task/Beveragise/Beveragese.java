@@ -20,6 +20,6 @@ public class Beveragese extends Products {
 
     @Override
     public String toString() {
-        return super.toString()+String.format(", объём: %s",liters);
+        return super.toString()+String.format(", объём: %sл., ",liters);
     }
 }

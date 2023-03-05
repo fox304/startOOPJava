@@ -19,6 +19,6 @@ public class Eggs extends FoodProducts{
 
     @Override
     public String toString() {
-        return super.toString()+String.format(" кол-во яиц %s",quantityInPackage);
+        return super.toString()+String.format(" кол-во яиц в %s %s штук",unitMeasure,quantityInPackage);
     }
 }

@@ -1,6 +1,5 @@
 package Seminar1.Task.Beveragise;
 
-import Seminar1.Task.Beveragise.Beveragese;
 
 public class Limonade extends Beveragese {
 
@@ -18,6 +17,6 @@ public class Limonade extends Beveragese {
 
     @Override
     public String toString() {
-        return super.toString()+ " ??? ";
+        return super.toString()+ " пить охлажденным ";
     }
 }

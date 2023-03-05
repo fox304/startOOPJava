@@ -1,7 +1,5 @@
 package Seminar1.Task.Beveragise;
 
-import Seminar1.Task.Beveragise.Beveragese;
-
 public class Milk extends Beveragese {
     private float percentFat;
 
@@ -24,6 +22,6 @@ public class Milk extends Beveragese {
 
     @Override
     public String toString() {
-        return super.toString()+String.format(" жирность: %s",percentFat);
+        return super.toString()+String.format(" жирность: %s %%",percentFat);
     }
 }

@@ -24,7 +24,7 @@ public class GoodsForChildren extends Products {
     @Override
     public String toString() {
         return super.toString()+
-                String.format(" минимальный возраст: %s, гипоаллергенность: %s",
+                String.format(" минимальный возраст: %s, гипоаллергенность: %s,",
                         minAge,hypoallergeneric);
     }
 }

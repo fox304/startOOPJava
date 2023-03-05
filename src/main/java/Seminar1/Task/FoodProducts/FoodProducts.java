@@ -19,6 +19,6 @@ public class FoodProducts extends Products {
 
     @Override
     public String toString() {
-        return super.toString()+String.format(" срок годности: %s",expirationDate);
+        return super.toString()+String.format(" срок годности: %s, ",expirationDate);
     }
 }

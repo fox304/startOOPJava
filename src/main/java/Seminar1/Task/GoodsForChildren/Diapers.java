@@ -32,7 +32,7 @@ public class Diapers extends GoodsForChildren{
     @Override
     public String toString() {
         return super.toString()+
-                String.format(" кол-во подгузников: %s, мин вес: %s, макс вес: %s, вид: %s",
-                        diapersCount,weiteMin,weiteMax,diapersType);
+                String.format(" кол-во подгузников в %s: %s, мин вес: %s, макс вес: %s, вид: %s",
+                        unitMeasure,diapersCount,weiteMin,weiteMax,diapersType);
     }
 }

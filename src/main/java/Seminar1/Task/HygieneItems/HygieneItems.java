@@ -20,6 +20,6 @@ public class HygieneItems extends Products {
 
     @Override
     public String toString() {
-        return super.toString()+String.format(" кол-во гигиенических средств %s",countItems);
+        return super.toString()+String.format(", кол-во в упаковке %s, ",countItems);
     }
 }

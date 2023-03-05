@@ -4,7 +4,7 @@ public class Products {
     private String nameProduct;
     private int price;
     private int count;
-    private String unitMeasure;
+    protected String unitMeasure;
 
     public Products(String nameProduct,
                     int price,
@@ -18,10 +18,11 @@ public class Products {
 
     @Override
     public String toString() {
-        return String.format("название продукта: %s,\t" +
-                " цена: %s,\t" +
-                " кол-во %s,\t" +
-                " единица измерения: %s",
+        return String.format("название продукта: %s, " +
+                " цена: %s, " +
+                " кол-во %s, " +
+                " единица измерения: %s ",
                 nameProduct,price,count,unitMeasure);
     }
+
 }
