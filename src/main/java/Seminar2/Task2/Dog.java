@@ -15,4 +15,14 @@ public class Dog extends Pet{
         System.out.println("Большая часть собак ласковая");
     }
 
+    @Override
+    public void printInfo() {
+        System.out.printf("эта собака %S тренировке",isTraining);
+    }
+
+    @Override
+    public void sound() {
+        System.out.println("гав-гав");
+
+    }
 }

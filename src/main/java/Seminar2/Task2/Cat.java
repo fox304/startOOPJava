@@ -10,4 +10,15 @@ public class Cat extends Pet{
     void showAffection() {
         System.out.println("Кот - ласковое животное");
     }
+
+    @Override
+    public void printInfo() {
+        System.out.printf("У этой кошки %s шерсть",fur);
+    }
+
+    @Override
+    public void sound() {
+        System.out.println("мяу-мяу");
+
+    }
 }
