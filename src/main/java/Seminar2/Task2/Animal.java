@@ -11,7 +11,6 @@ public abstract class Animal implements PrintInfoAnimal,SoundMaking{
         this.eyesColorAnimal = eyesColorAnimal;
     }
 
-    public Animal() {
 
-    }
+
 }
