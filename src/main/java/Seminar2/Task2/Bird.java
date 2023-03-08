@@ -8,7 +8,12 @@ public abstract class Bird extends Animal{
     }
 
     public Bird(int hightFlying) {
+        super();
         this.hightFlying = hightFlying;
+    }
+
+    public Bird(int hieghtAnimal, int wieghtAnimal, String eyesColorAnimal) {
+        super(hieghtAnimal, wieghtAnimal, eyesColorAnimal);
     }
 
     void fly(){
