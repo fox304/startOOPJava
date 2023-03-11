@@ -27,6 +27,6 @@ public class Chicken extends Bird{
 
     @Override
     public String toString() {
-        return "это курица";
+        return " курица";
     }
 }

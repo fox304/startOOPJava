@@ -3,6 +3,7 @@ package Seminar2.Task2;
 import java.util.Scanner;
 
 public class Menu {
+
     public static void createMenu(Zoo zoo){
         Scanner scanner = new Scanner(System.in);
 
@@ -16,29 +17,23 @@ public class Menu {
         System.out.println("6) Животные,которые в зоопарке издают такие звуки");
 
         int number = scanner.nextInt();
+        System.out.println("---------------------------------------------------");
 
         switch (number) {
-            case (1) -> zoo.addOneAnimal(scanner);
-            case (2) -> zoo.deleteOneAnimal(scanner);
-            case (3) -> zoo.printOneAnimal(scanner);
-            case (4) -> zoo.printOneSound(scanner);
+            case (1) -> zoo.addOneAnimal();
+            case (2) -> zoo.deleteOneAnimal();
+            case (3) -> zoo.printOneAnimal();
+            case (4) -> zoo.printOneSound();
             case (5) -> zoo.printInfo();
             case (6) -> zoo.printSounds();
             default -> wrongDial(zoo);
-
         }
+        System.out.println("--------------------------------------------------");
 
     }
     public static void wrongDial(Zoo zoo){
         System.out.println("Неверный набор - попробуй ещё ");
         createMenu(zoo);
     }
-
-
-
-
-
-
-
 
 }

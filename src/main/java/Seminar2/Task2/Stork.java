@@ -31,6 +31,6 @@ public class Stork extends Bird{
 
     @Override
     public String toString() {
-        return "это аист ";
+        return " аист ";
     }
 }

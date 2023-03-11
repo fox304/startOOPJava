@@ -31,6 +31,6 @@ public class Wolf extends WildAnimal{
 
     @Override
     public String toString() {
-        return "это волк ";
+        return "волк ";
     }
 }

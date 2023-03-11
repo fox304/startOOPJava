@@ -37,6 +37,6 @@ public class Cat extends Pet{
 
     @Override
     public String toString() {
-        return "это кошка";
+        return " кошка";
     }
 }

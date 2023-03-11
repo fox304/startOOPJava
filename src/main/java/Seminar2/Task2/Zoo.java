@@ -5,20 +5,13 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Zoo {
+    Scanner scanner = new Scanner(System.in);
 
     private List<Animal> animalArrayList;
 
     public Zoo(List<Animal> animalArrayList) {
         this.animalArrayList = animalArrayList;
     }
-
-//    public List<Animal> getAnimalArrayList() {
-//        return animalArrayList;
-//    }
-//    public Animal addAnimal (Animal an){
-//
-//    return an;
-//    }
 
     @Override
     public String toString() {
@@ -37,32 +30,34 @@ public class Zoo {
             an.soundAnimal();
         }
     }
-    public void printOneSound(Scanner scanner){
+    public void printOneSound(){
         System.out.printf("Сейчас в зоопарке %s животных\n",
                 animalArrayList.size());
         System.out.println("выберите номер животного ");
         int num = scanner.nextInt();
         animalArrayList.get(num-1).soundAnimal();
-        scanner.close();
+
     }
-    public void printOneAnimal(Scanner scanner){
+    public void printOneAnimal(){
         System.out.printf("Сейчас в зоопарке %s животных\n",
                 animalArrayList.size());
         System.out.println("выберите номер животного ");
         int num = scanner.nextInt();
         System.out.println(animalArrayList.get(num-1));
-        scanner.close();
+
     }
-    public void deleteOneAnimal(Scanner scanner){
+    public void deleteOneAnimal(){
         System.out.printf("Сейчас в зоопарке %s животных\n",
                 animalArrayList.size());
         System.out.println("выберите номер животного ");
         int num = scanner.nextInt();
+        System.out.printf("теперь в зоопарке нет %s\n",animalArrayList.get(num - 1).toString());
+        System.out.println("------------------------------------");
         animalArrayList.remove(num-1);
-        scanner.close();
+
         printInfo();
     }
-    public  void addOneAnimal(Scanner scanner){
+    public  void addOneAnimal(){
         System.out.println("Какое животное добавить?");
         System.out.println("1) Кошка");
         System.out.println("2) собака");
@@ -80,5 +75,9 @@ public class Zoo {
             case (6) -> animalArrayList.add(AddDefferensAnimals.addTiger());
 
         }
+        System.out.printf("теперь в зоопарк добавлен %s\n",
+                animalArrayList.get(animalArrayList.size()-1).toString());
+        System.out.println("--------------------------------------------");
+        printInfo();
     }
 }

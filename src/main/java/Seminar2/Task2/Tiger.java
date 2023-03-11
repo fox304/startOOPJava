@@ -25,7 +25,7 @@ public class Tiger extends WildAnimal{
 
     @Override
     public String toString() {
-        return "это тигр";
+        return "тигр";
     }
 }
 
