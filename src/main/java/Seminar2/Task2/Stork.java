@@ -7,13 +7,30 @@ public class Stork extends Bird{
         super(hieghtAnimal, wieghtAnimal, eyesColorAnimal, hightFlying);
     }
 
+
     @Override
-    public void printInfo() {
-        System.out.println("stork");
+    public void soundAnimal() {
+
+            System.out.println("уаааа-уааааа");
+
     }
 
     @Override
-    public void sound() {
-        System.out.println("уаааа-уааааа");
+    public void printInfoAnimal() {
+        System.out.printf("%s *** рост:%s вес:%s цвет глаз:%s ***  высота полёта:%s\n",
+                this,hieghtAnimal,wieghtAnimal,eyesColorAnimal,getHightFlying());
+
+    }
+
+    @Override
+    public void flyableAnimal() {
+        System.out.printf("Я умею летать до %d метров от земли\n",
+                hieghtAnimal);
+
+    }
+
+    @Override
+    public String toString() {
+        return "это аист ";
     }
 }

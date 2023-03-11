@@ -10,23 +10,33 @@ public class Cat extends Pet{
         this.fur = fur;
     }
 
+
+
     public boolean isFur(){
         return fur;
     }
 
     @Override
-    void showAffection() {
-        System.out.println("Кот - ласковое животное");
+    public String showAffection() {
+        return "Кот - ласковое животное";
     }
 
     @Override
-    public void printInfo() {
-        System.out.printf("У этой кошки %s шерсть",fur);
-    }
-
-    @Override
-    public void sound() {
+    public void soundAnimal() {
         System.out.println("мяу-мяу");
+    }
 
+    @Override
+    public void printInfoAnimal() {
+        System.out.printf("%s *** её зовут %s *** порода:%s *** вакцинация:%s *** цвет шерсти:%s *** родилась:%s",
+                this,this.nickName,this.bread,this.vaccine,this.colorFur,dateOfBirth);
+        System.out.printf("  *** рост:%s вес:%s цвет глаз:%s *** наличие шерсти:%s\n",
+                hieghtAnimal,wieghtAnimal,eyesColorAnimal,fur);
+
+    }
+
+    @Override
+    public String toString() {
+        return "это кошка";
     }
 }

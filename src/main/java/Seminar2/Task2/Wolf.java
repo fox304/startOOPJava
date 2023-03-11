@@ -14,14 +14,23 @@ public class Wolf extends WildAnimal{
         return leader;
     }
 
+
+
     @Override
-    public void printInfo() {
-        System.out.printf("этот волк %s ",leader);
+    public void soundAnimal() {
+        System.out.println("ауууу-аууууу");
     }
 
     @Override
-    public void sound() {
-        System.out.println("ауууу-аууууу");
+    public void printInfoAnimal() {
+        System.out.printf("%s *** среда обитания:%s *** дата отлова:%s *** статус лидера:%s *** рост:%s вес:%s цвет глаз:%s\n",
+                this,habitat,dateLocation,leader,hieghtAnimal,wieghtAnimal,eyesColorAnimal);
 
+
+    }
+
+    @Override
+    public String toString() {
+        return "это волк ";
     }
 }

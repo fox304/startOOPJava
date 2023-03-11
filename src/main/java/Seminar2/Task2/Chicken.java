@@ -7,15 +7,26 @@ public class Chicken extends Bird{
         super(hieghtAnimal, wieghtAnimal, eyesColorAnimal, hightFlying);
     }
 
+
     @Override
-    public void printInfo() {
-        System.out.println("chicken");
+    public void flyableAnimal() {
+        System.out.println("Я не умею летать");
+    }
+
+    @Override
+    public void soundAnimal() {
+        System.out.println("кококо-кококо");
+    }
+
+    @Override
+    public void printInfoAnimal() {
+        System.out.printf("%s *** рост:%s вес:%s цвет глаз:%s ***  высота полёта:%s\n",
+                this,hieghtAnimal,wieghtAnimal,eyesColorAnimal,getHightFlying());
 
     }
 
     @Override
-    public void sound() {
-        System.out.println("кококо-кококо");
-
+    public String toString() {
+        return "это курица";
     }
 }

@@ -8,14 +8,24 @@ public class Tiger extends WildAnimal{
                 habitat, dateLocation);
     }
 
+
+
     @Override
-    public void printInfo() {
-        System.out.println("tiger");
+    public void soundAnimal() {
+        System.out.println("рррррр-рррррр");
     }
 
     @Override
-    public void sound() {
-        System.out.println("рррррр-рррррр");
+    public void printInfoAnimal() {
+        System.out.printf("%s *** среда обитания:%s *** дата отлова:%s *** рост:%s вес:%s цвет глаз:%s\n ",
+                this,habitat,dateLocation,hieghtAnimal,wieghtAnimal,eyesColorAnimal);
 
+
+    }
+
+    @Override
+    public String toString() {
+        return "это тигр";
     }
 }
+

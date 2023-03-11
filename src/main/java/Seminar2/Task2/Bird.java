@@ -1,19 +1,19 @@
 package Seminar2.Task2;
 
-public abstract class Bird extends Animal{
+public abstract class Bird extends Animal implements Flyable{
     private int hightFlying;
 
-    public int getHightFlying() {
+
+    protected int getHightFlying() {
         return hightFlying;
     }
 
-    public Bird(int hieghtAnimal, int wieghtAnimal, String eyesColorAnimal,int hightFlying) {
+    protected Bird(int hieghtAnimal, int wieghtAnimal, String eyesColorAnimal,int hightFlying) {
         super(hieghtAnimal, wieghtAnimal, eyesColorAnimal);
         this.hightFlying = hightFlying;
+
     }
 
-    void fly(){
-        System.out.printf("Я лечу на %s метрах ",hightFlying);
-    }
+
 
 }

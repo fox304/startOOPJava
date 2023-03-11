@@ -1,6 +1,6 @@
 package Seminar2.Task2;
 
-public abstract class Animal implements PrintInfoAnimal,SoundMaking{
+public abstract class Animal  {
     int hieghtAnimal;
     int wieghtAnimal;
     String eyesColorAnimal;
@@ -10,7 +10,8 @@ public abstract class Animal implements PrintInfoAnimal,SoundMaking{
         this.wieghtAnimal = wieghtAnimal;
         this.eyesColorAnimal = eyesColorAnimal;
     }
-
+    abstract public void soundAnimal();
+    abstract public void printInfoAnimal();
 
 
 }

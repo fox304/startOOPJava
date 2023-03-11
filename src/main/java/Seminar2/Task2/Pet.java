@@ -17,7 +17,7 @@ public abstract class Pet extends Animal{
         this.dateOfBirth = dateOfBirth;
     }
 
-    abstract void showAffection();
+    public abstract String showAffection();
 
 
 }
