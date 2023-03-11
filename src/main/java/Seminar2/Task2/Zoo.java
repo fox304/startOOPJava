@@ -73,12 +73,17 @@ public class Zoo {
             case (4) -> animalArrayList.add(AddDefferensAnimals.addChicken());
             case (5) -> animalArrayList.add(AddDefferensAnimals.addWolf());
             case (6) -> animalArrayList.add(AddDefferensAnimals.addTiger());
+            default -> bug();
 
         }
         System.out.printf("теперь в зоопарк добавлен %s\n",
                 animalArrayList.get(animalArrayList.size()-1).toString());
         System.out.println("--------------------------------------------");
         printInfo();
+    }
+    public void bug(){
+        System.out.println("добавление других животных пока не предусмотрено");
+        addOneAnimal();
     }
     public void ableAnimals(){
         for (Animal an :
