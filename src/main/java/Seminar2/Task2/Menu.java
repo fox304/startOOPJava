@@ -15,6 +15,11 @@ public class Menu {
         System.out.println("4) Животное с номером i издатёт звук");
         System.out.println("5) Информация о животных, которые есть на данный момент в зоопарке");
         System.out.println("6) Животные,которые в зоопарке издают такие звуки");
+        System.out.println("""
+                7) изменение свойств животных :\s
+                \t\tу недрессированных собак - дрессировка\s
+                \t\tу нелетающих птиц - умение летать
+                \t\tу домашних животных без ласки - наделить таковой\s""");
 
         int number = scanner.nextInt();
         System.out.println("---------------------------------------------------");
@@ -26,6 +31,7 @@ public class Menu {
             case (4) -> zoo.printOneSound();
             case (5) -> zoo.printInfo();
             case (6) -> zoo.printSounds();
+            case (7) -> zoo.ableAnimals();
             default -> wrongDial(zoo);
         }
         System.out.println("--------------------------------------------------");

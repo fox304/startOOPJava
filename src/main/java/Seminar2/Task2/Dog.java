@@ -1,6 +1,6 @@
 package Seminar2.Task2;
 
-public class Dog extends Pet{
+public class Dog extends Pet implements TrainAble{
     private boolean isTraining;
 
 
@@ -9,14 +9,6 @@ public class Dog extends Pet{
         super(hieghtAnimal, wieghtAnimal, eyesColorAnimal,
                 nickName, bread, vaccine, colorFur, dateOfBirth);
         this.isTraining = isTraining;
-    }
-
-    public void training(){
-        if (!isTraining) {
-            System.out.printf("----теперь %s дрессированный----\n",nickName);
-            isTraining = true;
-        }
-
     }
 
     public boolean isTraining() {
@@ -48,5 +40,18 @@ public class Dog extends Pet{
     @Override
     public String toString() {
         return "собaка";
+    }
+
+    @Override
+    public void train() {
+        if (isTraining) {
+
+            System.out.println("Вообще-то она уже дрессированная!!!");
+        }
+        else {
+            System.out.println("Отлично, ты сделал всех собак  дрессированными!!!");
+            isTraining = true;
+
+        }
     }
 }

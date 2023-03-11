@@ -22,15 +22,13 @@ public class Stork extends Bird{
 
     }
 
-    @Override
-    public void flyableAnimal() {
-        System.out.printf("Я умею летать до %d метров от земли\n",
-                hieghtAnimal);
 
-    }
+
 
     @Override
     public String toString() {
         return " аист ";
     }
+
+
 }

@@ -43,7 +43,7 @@ public class Zoo {
                 animalArrayList.size());
         System.out.println("выберите номер животного ");
         int num = scanner.nextInt();
-        System.out.println(animalArrayList.get(num-1));
+        animalArrayList.get(num-1).printInfoAnimal();
 
     }
     public void deleteOneAnimal(){
@@ -79,5 +79,12 @@ public class Zoo {
                 animalArrayList.get(animalArrayList.size()-1).toString());
         System.out.println("--------------------------------------------");
         printInfo();
+    }
+    public void ableAnimals(){
+        for (Animal an :
+                animalArrayList) {
+            if (an instanceof TrainAble) ((TrainAble) an).train();
+            if (an instanceof FlyableBird) ((FlyableBird) an).flyBird();
+        }
     }
 }

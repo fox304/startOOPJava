@@ -16,10 +16,6 @@ public class Cat extends Pet{
         return fur;
     }
 
-    @Override
-    public String showAffection() {
-        return "Кот - ласковое животное";
-    }
 
     @Override
     public void soundAnimal() {
@@ -38,5 +34,10 @@ public class Cat extends Pet{
     @Override
     public String toString() {
         return " кошка";
+    }
+
+    @Override
+    public String showAffection() {
+        return "Коты ласковые животные";
     }
 }

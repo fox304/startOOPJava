@@ -1,6 +1,6 @@
 package Seminar2.Task2;
 
-public abstract class Pet extends Animal{
+public abstract class Pet extends Animal {
     String nickName;
     String bread;
     boolean vaccine;
@@ -17,7 +17,7 @@ public abstract class Pet extends Animal{
         this.dateOfBirth = dateOfBirth;
     }
 
-    public abstract String showAffection();
+    public  abstract String showAffection();
 
 
 }

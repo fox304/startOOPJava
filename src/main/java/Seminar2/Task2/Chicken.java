@@ -8,10 +8,7 @@ public class Chicken extends Bird{
     }
 
 
-    @Override
-    public void flyableAnimal() {
-        System.out.println("Я не умею летать");
-    }
+
 
     @Override
     public void soundAnimal() {
