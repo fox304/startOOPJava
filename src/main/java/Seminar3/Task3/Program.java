@@ -4,11 +4,13 @@ public class Program {
     public static void main(String[] args) {
         ArrayFigura array = new ArrayFigura();
 
-        for (Figura fg :
-                array.metod1()) {
-            fg.getArea();
-           if (fg instanceof Perimetr) ( (Polygon)fg).getPerimetr();
-        }
+
+        array.metod1();
+        array.getInfoFigures();
+        array.newFigure();
+        array.deleteFigure();
+
+
 
 
     }
