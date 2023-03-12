@@ -1,8 +1,8 @@
 package Seminar2.Task2;
 
 public abstract class Animal  {
-    int hieghtAnimal;
-    int wieghtAnimal;
+   protected int hieghtAnimal;
+   protected int wieghtAnimal;
     String eyesColorAnimal;
 
     public Animal(int hieghtAnimal, int wieghtAnimal, String eyesColorAnimal) {
