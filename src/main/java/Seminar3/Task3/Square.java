@@ -7,6 +7,9 @@ public class Square extends Rectangle{
 
     @Override
     public String toString() {
-        return "квадрат";
+//        return String.format("квадрат: \n\tплощадь: %s\n\tпериметр: %s",
+//                getArea(),this.getPerimetr());
+
+        return "квадрат:";
     }
 }

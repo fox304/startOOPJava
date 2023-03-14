@@ -4,22 +4,23 @@ public class Circle extends Figura implements LengthCircle{
     private int r;
 
     public Circle(int r) {
+        super(new int[r]);
         this.r = r;
     }
 
     @Override
     public String toString() {
-        return "круг";
+        return "круг:";
     }
 
     @Override
-    public void getArea() {
-        System.out.printf("%s: площадь равна : %s\n\t\t",this,r*r*Math.PI);
+    public double getArea() {
+        return r*r*Math.PI;
     }
 
 
     @Override
-    public void getLengthCircle() {
-        System.out.printf("длина окружности равна %s\n\n",r*2*Math.PI);
+    public double getLengthCircle() {
+        return 2*r*Math.PI;
     }
 }

@@ -4,17 +4,20 @@ public abstract class Polygon extends Figura implements Perimetr{
     int [] sides;
 
     @Override
-    public void getPerimetr() {
+    public int getPerimetr() {
         int sum = 0;
-        System.out.print("\t\t");
-        for (int si: sides) {
-            System.out.print(" "+si);
-            sum+=si;
+        for (int item: sides) {
+            sum+=item;
+
         }
-        System.out.printf(" периметр равен %s\n\n",sum);
+//        System.out.println(sum);
+        return sum;
 
     }
     public Polygon(int[] sides) {
+        super(sides);
         this.sides = sides;
     }
+
+
 }

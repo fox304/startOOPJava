@@ -15,14 +15,17 @@ public class Triangle extends Polygon {
 
     @Override
     public String toString() {
-        return "треугольник";
+//        return String.format("треугольник: \n\tплощадь: %s\n\tпериметр: %s",
+//                getArea(),this.getPerimetr());
+        return "треугольник: ";
     }
 
 
     @Override
-    public void getArea() {
+    public double getArea() {
         double p = (a+b+c)*1.0/2;
         double p1 = p*(p-a)*(p-b)*(p-c);
-        System.out.printf("%s: площадь равна %s\n",this,Math.sqrt(p1));
+        return  Math.sqrt(p1);
+
     }
 }

@@ -1,8 +1,10 @@
 package Seminar3.Task3;
 
-public  class Rectangle extends Polygon {
+
+public  class Rectangle extends Polygon  {
     public int a;
     public int b;
+    public int index = 0;
 
     public Rectangle(int a, int b) {
         super(new int[] {a,b,a,b});
@@ -12,12 +14,14 @@ public  class Rectangle extends Polygon {
     }
 
     @Override
-    public void getArea() {
-        System.out.printf("%s: площадь равна %s * %s = %s\n",this,a,b,a*b);
+    public double getArea() {
+        return a*b;
     }
 
     @Override
     public String toString() {
-        return "прямоугольник";
+        return "прямоугольник:";
     }
+
+
 }
