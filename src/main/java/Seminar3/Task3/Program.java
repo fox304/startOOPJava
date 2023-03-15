@@ -6,20 +6,20 @@ public class Program {
         ArrayFigura array = new ArrayFigura();
 
 
-        array.defaultFigures();
-        array.getInfoFigures();
+        array.defaultFigures();    // фигуры по умолчанию
+        array.getInfoFigures();    // инфо о фигурах
 
-        array.addNewFigura();
-        array.getInfoFigures();
-
-        array.deleteFigure();
-        array.getInfoFigures();
-
-        array.replaceFigura();
-        array.getInfoFigures();
-
-        array.sortOfArea();
-        array.getInfoFigures();
+//        array.addNewFigura();    // добавление фигуры
+//        array.getInfoFigures();
+//
+//        array.deleteFigure();    // удаление фигуры
+//        array.getInfoFigures();
+//
+//        array.replaceFigura();   //  вставка фигуры по индексу
+//        array.getInfoFigures();
+//
+//        array.sortOfArea();     //  сортировка по площади
+//        array.getInfoFigures();
 
 
 
