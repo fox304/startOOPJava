@@ -2,8 +2,7 @@ package Seminar3.Task3;
 
 
 public abstract class Figura implements Area, Comparable<Figura> {
-    int [] numbers;
-    int index = -1;
+    private int [] numbers;
 
     public Figura(int[] numbers) {
         this.numbers = numbers;

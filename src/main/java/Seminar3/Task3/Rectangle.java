@@ -2,8 +2,8 @@ package Seminar3.Task3;
 
 
 public  class Rectangle extends Polygon  {
-    public int a;
-    public int b;
+    protected int a;
+    protected int b;
 
 
     public Rectangle(int a, int b) {

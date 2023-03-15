@@ -1,9 +1,9 @@
 package Seminar3.Task3;
 
 public class Triangle extends Polygon {
-    public int a;
-    public   int b;
-    public int c;
+    private int a;
+    private    int b;
+    private int c;
 
     public Triangle(int a, int b, int c) {
         super(new int[] {a,b,c});
