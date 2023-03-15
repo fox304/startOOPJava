@@ -4,7 +4,7 @@ package Seminar3.Task3;
 public  class Rectangle extends Polygon  {
     public int a;
     public int b;
-    public int index = 0;
+
 
     public Rectangle(int a, int b) {
         super(new int[] {a,b,a,b});
@@ -20,7 +20,7 @@ public  class Rectangle extends Polygon  {
 
     @Override
     public String toString() {
-        return "прямоугольник:";
+        return "прямоугольник:("+a+","+b+","+a+","+b+")\n";
     }
 
 

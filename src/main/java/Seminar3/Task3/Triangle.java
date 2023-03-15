@@ -15,9 +15,7 @@ public class Triangle extends Polygon {
 
     @Override
     public String toString() {
-//        return String.format("треугольник: \n\tплощадь: %s\n\tпериметр: %s",
-//                getArea(),this.getPerimetr());
-        return "треугольник: ";
+        return "треугольник:("+a+","+b+","+c+") \n";
     }
 
 

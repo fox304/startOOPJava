@@ -10,7 +10,7 @@ public abstract class Polygon extends Figura implements Perimetr{
             sum+=item;
 
         }
-//        System.out.println(sum);
+
         return sum;
 
     }

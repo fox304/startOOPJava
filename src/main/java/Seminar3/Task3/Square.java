@@ -10,6 +10,6 @@ public class Square extends Rectangle{
 //        return String.format("квадрат: \n\tплощадь: %s\n\tпериметр: %s",
 //                getArea(),this.getPerimetr());
 
-        return "квадрат:";
+        return "квадрат:("+a+")\n";
     }
 }

@@ -39,11 +39,10 @@ public class ArrayFigura {
             System.out.println("-------------------------");
 
         }
-        System.out.println("------------------------1");
+        System.out.println("-------------------------");
     }
 
     public Figura newFigure() {
-
 
         switch (listFigure()) {
             case (1) -> {
@@ -53,14 +52,20 @@ public class ArrayFigura {
                 return new Rectangle(rn.nextInt(1, 10), rn.nextInt(1, 10));
             }
             case (3) -> {
-                return new Triangle(rn.nextInt(1, 10), rn.nextInt(1, 10), rn.nextInt(1, 10));
+                int a = rn.nextInt(1, 10);
+                int b = rn.nextInt(1, 10);
+                int c = rn.nextInt(1, 10);
+                return new Triangle(a,b,errorsHandling(a,b,c));
             }
             case (4) -> {
                 return new Circle(rn.nextInt(1, 10));
             }
             default -> wrongDial();
         }
+
         return null;
+
+
 
 
     }
@@ -71,28 +76,55 @@ public class ArrayFigura {
     }
 
     public void deleteFigure() {
+
         System.out.printf("сейчас есть %s фигур,какую удаляете?",
                 figuraList.size());
         int num = scanner.nextInt();
-        if (num > 0 && num < figuraList.size()+1) figuraList.remove(num - 1 );
+
+        while (num < 1 || num > figuraList.size()) {
+
+            System.out.println("других фигур пока нет для удаления," +
+                    " введите снова");
+            num = scanner.nextInt();
+
+        }
+        System.out.printf("удалена фигура номер %s: %s",
+                num,figuraList.get(num-1).toString());
+        figuraList.remove(num - 1);
+
 
 
     }
+
     public  void replaceFigura(){
-        System.out.println("какую фигуру вы хотите заменить?");
+
+        System.out.println("какую фигуру вы хотите вставить?");
         Figura fg = newFigure();
-        System.out.println("введите индекс для замены выбранной фигуры:");
+        System.out.printf("""
+                        введите индекс для вставки выбранной фигуры,
+                        всего %s фигур
+                        :""",
+                figuraList.size());
         int index = scanner.nextInt();
-        figuraList.set(index-1,fg);
+        while (index > figuraList.size()) {
+
+            System.out.println("сделайте правильный ввод");
+            index = scanner.nextInt();
+        }
+
+        figuraList.add(index-1,fg);
 
 
     }
     public  void addNewFigura(){
         System.out.println("какую фигуру вы добавдяете?");
         figuraList.add(newFigure());
+        System.out.printf("вы добавили фигуру : %s",
+               figuraList.get(figuraList.size()-1));
     }
 
     public void sortOfArea() {
+        System.out.println("сортируем фигуры по площади:");
         Collections.sort(figuraList);
 
 
@@ -108,6 +140,18 @@ public class ArrayFigura {
                 """);
 
         return scanner.nextInt();
+    }
+
+    public int errorsHandling(int a,int b,int c) {
+        System.out.printf("треугольник сo сторонами (%s,%s,%s) не существует, ", a, b, c);
+        System.out.println("поэтому сгенерируем другой треугольник  ");
+        for (int i = 1; i < 11; i++) {
+            if (a < (b + i) && b < (a + i) && i < (a + b)) {
+                c = i;
+                return c;
+            }
+        }
+        return 0;
     }
 
 }

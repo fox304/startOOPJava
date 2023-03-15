@@ -10,7 +10,7 @@ public class Circle extends Figura implements LengthCircle{
 
     @Override
     public String toString() {
-        return "круг:";
+        return "круг:(радиус "+r+")\n";
     }
 
     @Override

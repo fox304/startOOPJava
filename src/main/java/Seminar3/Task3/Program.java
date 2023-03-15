@@ -12,14 +12,14 @@ public class Program {
         array.addNewFigura();
         array.getInfoFigures();
 
-//        array.deleteFigure();
-//        array.getInfoFigures();
+        array.deleteFigure();
+        array.getInfoFigures();
 
-//        array.replaceFigura();
-//        array.getInfoFigures();
+        array.replaceFigura();
+        array.getInfoFigures();
 
-//        array.sortOfArea();
-//        array.getInfoFigures();
+        array.sortOfArea();
+        array.getInfoFigures();
 
 
 
