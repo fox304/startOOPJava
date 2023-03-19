@@ -7,8 +7,6 @@ public class DynamicArray <T> {
     private T[] t;
     private int size;
 
-    public DynamicArray() {
-    }
 
     public DynamicArray(T[] t) {
 
@@ -106,6 +104,60 @@ public class DynamicArray <T> {
         }
         return isThere;
     }
+    public void bubbleSort(){
+        T temp ;
+        for (int i = 0;i < size;i++) {
+            for (int j = 1;j < size;j++) {
+                if((Integer)t[j] < (Integer)(t[j-1])){
+                    temp = t[j-1];
+                    t[j-1] = t[j];
+                    t[j] = temp;
+
+                }
+            }
+        }
+    }
+
+    public void insertionSort(){
+        T temp;
+        for (int i = 1;i < size;i++) {
+            for (int j = 0;j < i;j++) {
+                if((Integer)t[i] < (Integer)(t[j])){
+                    temp = t[j];
+                    t[j] = t[i];
+                    t[i] = temp;
+                }
+            }
+        }
+
+    }
+    public void selectionSort(){
+        T temp;
+        for (int i = 0;i < size;i++) {
+            for (int j = i+1;j < size;j++) {
+                if((Integer)t[j] < (Integer)(t[i])){
+                    temp = t[i];
+                    t[i] = t[j];
+                    t[j] = temp;
+                }
+            }
+        }
+    }
+    public T getValueOfGivenIndex(int index){
+        for(int i = 0;i <size;i++){
+            if(i == index)return t[i];
+        }
+        return null;
+    }
+    public void setValueOfGivenIndex(int index,T value){
+        for(int i = 0;i <size;i++){
+            if (i == index) {
+                t[index] = value;
+                break;
+            }
+        }
+    }
+
 
 
 
